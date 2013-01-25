@@ -1,0 +1,101 @@
+/**
+ * @file style.css 
+ * @author Rohith Mohan (mohanrohith@gmail.com)
+ */
+ 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Helper Styles */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+.cf {
+    *zoom:1;
+}
+
+/* main styles */
+.main {
+    position: relative;
+    width: 500px; /*@Todo change to make it responsive */
+    height: 500px; /*@Todo change to make it responsive */
+    background: #eee; /*@Todo change */
+}
+
+
+.grid-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+
+.grid-cell {
+    width: 33%;
+    height: 33%;
+    float: left;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    outline: 1px #000 solid;
+}
+
+.grid-cell .circle {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    border: 1px solid #444;
+    
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    
+    box-shadow: 0 0 1em #000 inset;
+}
+
+.grid-cell .circle.active {
+    background: #777;
+}
+
+.grid-cell .circle .inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: -.5em;
+    margin-left: -.5em;
+    background: #999;
+    
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    
+}
+
+/* Logger */
+.logger {
+    margin: 1em 0;
+    font-family: tahoma, sans;
+    font-size: 1.5em;
+    color: #444;
+    text-align: center;
+    max-width: 500px;
+}
