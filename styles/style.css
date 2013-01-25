@@ -1,8 +1,8 @@
 /**
- * @file style.css 
+ * @file style.css
  * @author Rohith Mohan (mohanrohith@gmail.com)
  */
- 
+
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
     bottom: 0;
     top: 0;
     z-index: 2;
-    
+
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
@@ -52,7 +52,7 @@ body {
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    outline: 1px #000 solid;
+    /*outline: 1px #000 solid;*/
 }
 
 .grid-cell .circle {
@@ -62,11 +62,11 @@ body {
     left: 20%;
     right: 20%;
     border: 1px solid #444;
-    
+
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    
+
     box-shadow: 0 0 1em #000 inset;
 }
 
@@ -83,11 +83,11 @@ body {
     margin-top: -.5em;
     margin-left: -.5em;
     background: #999;
-    
+
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    
+
 }
 
 /* Logger */
